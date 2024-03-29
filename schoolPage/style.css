@@ -20,51 +20,103 @@
 
 /* General setup */
 
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0 auto;
-    min-width: 1000px;
-    max-width: 1400px;
-    font-family: 'robotoregular', Helvetica, sans-serif;
-  }
-  
-  /* Layout */
-  
-  section {
-    float: left;
-    width: 50%;
-  }
-  
-  aside {
-    float: left;
-    width: 30%;
-  }
-  
-  nav {
-    float: left;
-    width: 20%;
-  }
-  
-  footer {
-    clear: both;
-  }
-  
-  header, section, aside, nav, footer {
-    padding: 20px;
-  }
-  
-  /* header and footer */
-  
-  header, footer {
-    border-top: 5px solid #a66;
-    border-bottom: 5px solid #a66;
-  }
-  
-  /* WRITE YOUR CODE BELOW HERE */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
 
-  h1, h2 {
-    font-family: 'wellfleetregular', Verdana, Tahoma, sans-serif;
-  }
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: 'robotoregular', Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  line-height: 2.8rem;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  line-height: 2.8rem;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+h1, h2 {
+  font-family: 'wellfleetregular', Verdana, Tahoma, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+p {
+  line-height: 2.8rem;
+  letter-spacing: 0.03rem;
+}
+p a {
+  color:rgb(25, 25, 171);
+}
+h2 + p::first-line {
+  text-indent: 30%;
+  color: red;
+}
+/* links nav and list*/
+a {
+  color: #a66;
+}
+a:link {}
+a:visited {
+  color: aqua;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(58, 229, 39);
+  text-decoration: none;
+}
+a:active {
+  color: red;
+}
+a[href*="http"] {
+  background: url(../CSScode/icons8-external-link-26.png) no-repeat 100% 0;
+  padding-right: 19px;
+  background-size: 15px;
+}
+
+/* list aside and nav  */
+li {
+  list-style-type: none;
+  background: url(../vidfoto-html/planet.png) no-repeat 0 50%;
+  padding-left: 25px;
+  background-size: 20px;
+}
