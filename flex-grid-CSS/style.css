@@ -38,6 +38,7 @@ article:nth-of-type(3) {
 section {
     display: flex;
     flex-flow: row wrap;
+    margin-top: 30px;
 }
 
 button {
@@ -58,10 +59,20 @@ button:last-child {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
   
 /* trening about grid  */
 
 .wrapper {
     padding-right: 20px;
+}
+.wrapper .row {
+    clear: both;
+}
+.wrapper .row .col {
+    float: left;
+    margin-left: 20px;
+    width: 60px;
+    background: rgb(255, 150, 150);
 }
