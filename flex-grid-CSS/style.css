@@ -52,7 +52,7 @@ button:last-child {
     order: -1;
 }
 
-div {
+.top-buttons {
     /* height: 100px;
     border: 1px solid black; */
     display: flex;
