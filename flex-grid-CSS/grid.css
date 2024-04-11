@@ -1,0 +1,15 @@
+.item-1 {
+    background-color: red;
+}
+
+.item-2 {
+    background-color: green;
+}
+
+.item-3 {
+    background-color: blue;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 100px 200px 200px;
+}
